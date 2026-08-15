@@ -17,5 +17,7 @@ COPY chiaki-ng /usr/bin/chiaki-ng
 COPY chiaki-ng.desktop /usr/share/applications/chiaki-ng.desktop
 COPY icon.png /usr/share/icons/hicolor/128x128/apps/chiaki-ng.png
 
-RUN chmod 0755 /usr/bin/chiaki-ng && cpak-clean-junk
-
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libva-drm2 libva-wayland2 libva-x11-2 && \
+    chmod 0755 /usr/bin/chiaki-ng && \
+    cpak-clean-junk
