@@ -1,0 +1,60 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
+  "manifest_version": "2.0",
+  "name": "chiaki-ng",
+  "description": "Use PlayStation Remote Play from Linux.",
+  "version": "1.10.0",
+  "image": "ghcr.io/containerpak/chiaki-ng:main",
+  "binaries": [
+    "/usr/bin/chiaki-ng"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/chiaki-ng.desktop"
+  ],
+  "dependencies": [],
+  "addons": [],
+  "idle_time": 0,
+  "override": {
+    "socketX11": true,
+    "socketWayland": true,
+    "socketPulseAudio": true,
+    "socketSessionBus": true,
+    "socketSystemBus": false,
+    "socketSshAgent": false,
+    "socketCups": false,
+    "socketGpgAgent": false,
+    "socketAtSpiBus": true,
+    "socketBluetooth": false,
+    "deviceDri": true,
+    "deviceKvm": false,
+    "deviceShm": true,
+    "deviceAlsa": false,
+    "deviceVideo": true,
+    "deviceFuse": false,
+    "deviceTun": false,
+    "deviceUsb": false,
+    "deviceInput": true,
+    "deviceTTY": false,
+    "deviceAll": false,
+    "notification": true,
+    "openURI": true,
+    "hostApplications": false,
+    "hostActions": [],
+    "filesystem": [
+      {
+        "path": "xdg-download",
+        "access": "read-write"
+      }
+    ],
+    "env": [],
+    "network": true,
+    "process": false,
+    "userNamespaces": true,
+    "memoryMaxMB": 0,
+    "cpuQuota": 0,
+    "pidsMax": 0,
+    "asRoot": false,
+    "allowedHostCommands": []
+  }
+}
+

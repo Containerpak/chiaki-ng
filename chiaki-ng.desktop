@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=chiaki-ng
+Comment=Use PlayStation Remote Play from Linux.
+Exec=chiaki-ng %U
+Icon=chiaki-ng
+Terminal=false
+Categories=Game;Network;
+
