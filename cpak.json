@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "chiaki-ng",
   "description": "Use PlayStation Remote Play from Linux.",
   "version": "1.10.0",
-  "image": "ghcr.io/containerpak/chiaki-ng:main",
+  "image": "ghcr.io/containerpak/chiaki-ng@sha256:ea7d5d984543b47e1f4cf2bf3a376935675880f8dac742dff499abcde464c462",
   "binaries": [
     "/usr/bin/chiaki-ng"
   ],
@@ -15,16 +15,11 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -53,8 +48,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
-
