@@ -4,7 +4,7 @@
   "name": "chiaki-ng",
   "description": "Use PlayStation Remote Play from Linux.",
   "version": "1.10.0",
-  "image": "ghcr.io/containerpak/chiaki-ng@sha256:610a3d927b7f62e8aab5187e17bc39a1b3bbe3666cb7b3e6faa07a0457564742",
+  "image": "ghcr.io/containerpak/chiaki-ng@sha256:e168b611634a0ea17220024eba47c4c594d8d9ed4e84791e093d22b33f4c987f",
   "binaries": [
     "/usr/bin/chiaki-ng"
   ],
